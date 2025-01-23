@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: datas_exo
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      show_sql: true
+      format_sql: true
+      ddl-auto: create-drop
+server:
+  port: 8082
+
