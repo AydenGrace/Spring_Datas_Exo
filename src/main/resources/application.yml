@@ -3,7 +3,7 @@ spring:
     name: datas_exo
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:5432/datas_exos
     username: postgres
     password: password
   jpa:

@@ -10,10 +10,10 @@ import java.util.Optional;
 @Repository
 public interface IAddressRepository extends JpaRepository<Address,Long> {
 
-    @Query("select a " +
-            "from Address a " +
-            "where a.streetNumber = ?1 " +
-                "and a.streetName = ?2 " +
-                "and a.city = ?3")
-    Optional<Address> findAddress(String streetNumber, String streetName, String city);
+//    @Query(value = "select a " +
+//            "from Address a " +
+//            "where a.streetNumber = ?1 " +
+//                "and a.streetName = ?2 " +
+//                "and a.city = ?3")
+    Optional<Address> findAddressByStreetNumberAndStreetNameAndCity(String streetNumber, String streetName, String city);
 }
